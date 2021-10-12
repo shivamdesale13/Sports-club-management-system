@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Ground</title>
+	<link rel="stylesheet" href="regis.css">
+</head>
+<body style="background-color: #fec107;">
+  <!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="wrapper">
+    <div class="title">
+      Ground Booking
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Username</label>
+          <input type="text" class="input">
+       </div>   
+      
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input">
+       </div> 
+      <div class="inputfield">
+        <label>Sports</label>
+        <div class="custom_select">
+          <select>
+            <option value="">Select</option>
+            <option value="male">Cricket</option>
+            <option value="female">Football</option>
+          </select>
+        </div>
+     </div> 
+     <div class="inputfield">
+      <label>Ground Name</label>
+      <div class="custom_select">
+        <select>
+          <option value="">Select</option>
+          <option value="male">xyz</option>
+          <option value="">lmn</option>
+          <option value="">abc</option>
+          <option value="">efg</option>
+        </select>
+      </div>
+   </div>
+        <div class="inputfield">
+          <label>Hours Required</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">1 (Rs.400/-)</option>
+              <option value="female">2 (Rs.750/-)</option>
+              <option value="male">3 (Rs.1100/-)</option>
+            </select>
+          </div>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Payment" class="btn">
+      </div>
+    </div>
+</div>	
+
+	
+</body>
+</html>

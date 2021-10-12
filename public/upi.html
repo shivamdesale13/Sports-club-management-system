@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>upi</title>
+</head>
+<body>
+    <!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+
+
+<div class="row">
+
+	<aside class="col-sm-6">
+
+<article class="card">
+<div class="card-body p-5">
+
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link " data-toggle="pill" href="payment.html">
+		<i class="fa fa-credit-card"></i> Credit Card</a></li>
+	<li class="nav-item">
+		<a class="nav-link active " data-toggle="pill" href="upi.html">
+		<i class="fab fa-paypal"></i>  UPI</a></li>
+
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade show active" id="nav-tab-card">
+	<p class="alert alert-success">Payment Gateway</p>
+	<form role="form">
+	<div class="form-group">
+		<label for="username">Full name </label>
+		<input type="text" class="form-control" name="username" placeholder="" required="">
+	</div> <!-- form-group.// -->
+
+	<div class="form-group">
+		<label for="cardNumber">UPI ID</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="">
+			
+		</div>
+	</div> <!-- form-group.// -->
+
+    <div class="form-group">
+		<label for="cardNumber">UPI PIN</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="">
+			
+		</div>
+	</div> 
+
+	<a href="index.html" style="text-decoration: none; color: burlywood;"><button class="subscribe btn btn-primary btn-block" type="button"> Confirm</button></a>
+	</form>
+</div> <!-- tab-pane.// -->
+
+
+</div> <!-- tab-content .// -->
+
+</div> <!-- card-body.// -->
+</article> <!-- card.// -->
+
+
+	</aside> <!-- col.// -->
+</div> <!-- row.// -->
+
+</div> 
+<!--container end.//-->
+
+<br><br>
+
+
+
+</body>
+</html>
