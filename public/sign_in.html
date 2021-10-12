@@ -27,8 +27,10 @@ $(function(){
     <div class="login-wrap">
         
         <div class="login-html">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"></label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+
+            
             
             <div class="login-form">
                 <div class="sign-in-htm">
@@ -50,33 +52,7 @@ $(function(){
 
 
 
-                <form action="/sign_up" method="POST">
-                <div class="sign-up-htm">
-                    <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" name="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="password" name="password" type="password" class="input" >
-                        <i class="bi bi-eye-slash" id="togglePassword"></i>
-                    </div>
-                    <div class="group">
-                        <label for="pass1" class="label">Repeat Password</label>
-                        <input id="password1" name="password1" type="password1" class="input" >
-                        <i class="bi bi-eye-slash" id="togglePassword"></i>
-                    </div>
-                    <div class="group">
-                        <label for="mail" class="label">Email Address</label>
-                        <input id="mail" name="mail" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
-                        oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')" class="input">
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" onclick="document.location = 'regis.html'" value="Sign Up">
-                    </div>
-                    
-                </div>
-            </form>
+                
             </div>
         </div>
     </div>
