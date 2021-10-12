@@ -46,6 +46,9 @@ app.post("/sign_up",(req,res)=>{
 })
 
 
+
+
+
 app.get("/",(req,res)=>{
     res.set({
         "Allow-access-Allow-Origin": '*'
