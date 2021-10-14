@@ -27,20 +27,22 @@ $(function(){
     <div class="login-wrap">
         
         <div class="login-html">
+            
+            <form action="/sign_in" method="POST">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
 
             
-            
+             
             <div class="login-form">
                 <div class="sign-in-htm">
                     <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <label for="Username" class="label">Username</label>
+                        <input id="username" name="username" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="password" type="password" class="input" type="password">
+                        <label for="pasword" class="label">Password</label>
+                        <input id="passw" name="passw" type="password" class="input" >
                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>
                     
@@ -49,18 +51,16 @@ $(function(){
                     </div>
                    
                 </div>
-
-
-
-                
+  
             </div>
+            </form>
         </div>
     </div>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'>
     </script>
     <script>
         const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
+        const password = document.querySelector('#passw');
 
         togglePassword.addEventListener('click', function (e) {
             // toggle the type attribute
